@@ -5,7 +5,7 @@ import { Products } from '@/components/sections/products'
 import { Testimonials } from '@/components/sections/testimonials'
 import { Team } from '@/components/sections/team'
 import { CTA } from '@/components/sections/cta'
-
+import { Footer } from '@/components/layout/footer'         
 //import css
 import '@/app/globals.css'
 export const metadata: Metadata = {
@@ -22,6 +22,7 @@ export default function Home() {
       <Testimonials />
       <Team />
       <CTA />
+      <Footer />
     </main>
   )
 }

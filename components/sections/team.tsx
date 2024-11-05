@@ -5,7 +5,7 @@ import { LinkedInLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons'
 
 export const Team = () => {
   return (
-    <section className="w-full bg-gray-50 py-20 px-4 md:px-6 lg:px-8">
+    <section id="team" className="w-full bg-white py-20 px-4 md:px-6 lg:px-8">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12">Our Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

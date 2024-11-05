@@ -19,6 +19,7 @@ export interface Product {
   description: string
   color: string
   image: string
+  tryNowLink: string
 }
 
 export interface Testimonial {

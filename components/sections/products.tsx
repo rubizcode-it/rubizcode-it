@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { products } from '@/lib/constants/products'
 import {  Product } from '@/types'
+import { ExternalLink } from "lucide-react"
 
 interface ProductCardProps {
   product: Product
@@ -20,7 +21,7 @@ const ProductCard: FC<ProductCardProps> = ({ product, index }) => {
       <CardContent className="p-6 flex flex-col md:flex-row items-center">
         <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
           <Image
-            src={`/placeholder.svg?height=300&width=300`}
+            src={`${product.image}?height=300&width=300`}
             alt={`${product.name} image`}
             width={300}
             height={300}
@@ -34,9 +35,10 @@ const ProductCard: FC<ProductCardProps> = ({ product, index }) => {
           <p className="mb-4">{product.description}</p>
           <Button 
             variant="secondary"
-            onClick={() => window.open(`/products/${product.name.toLowerCase()}`, '_blank')}
+            className="bg-white hover:bg-gray-100 flex items-center gap-2 text-black"
+            onClick={() => window.open(product.tryNowLink, '_blank')}
           >
-            Try Now
+            Try Now <ExternalLink className="h-4 w-4" />
           </Button>
         </div>
       </CardContent>
@@ -46,7 +48,7 @@ const ProductCard: FC<ProductCardProps> = ({ product, index }) => {
 
 export function Products() {
   return (
-    <section className={`w-full bg-gray-100 py-20 px-4 md:px-6 lg:px-8 `}>
+    <section id="products" className={`w-full bg-gray-100 py-20 px-4 md:px-6 lg:px-8`}>
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12">Our Products</h2>
         <div className="space-y-12">

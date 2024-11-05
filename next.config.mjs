@@ -15,6 +15,9 @@ const nextConfig = {
         }
       ],
       domains: ['images.unsplash.com', 'localhost'],
+      dangerouslyAllowSVG: true,
+      contentDispositionType: 'attachment',
+      contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     },
   
     // Headers for security
