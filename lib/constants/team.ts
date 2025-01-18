@@ -25,14 +25,5 @@ export const team = [
       linkedin: 'https://www.linkedin.com/in/sufi-ahamad',
       twitter: 'https://x.com/sufi_ahammad1'
     }
-  },
-  {
-    name: 'Nafiz Niaz Khan',
-    role: 'CMO & Business Analyst',
-    image: '/images/team/nafiz.jpg',
-    social: {
-      linkedin: 'https://www.linkedin.com/in/nafizniazkhan/',
-      twitter: 'https://x.com/iamNabeenkhan'
-    }
   }
 ] 
