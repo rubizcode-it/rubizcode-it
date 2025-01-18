@@ -28,13 +28,13 @@ export const products = [
       image: '/images/products/taalaash.svg',
       tryNowLink: 'https://taalaash.com'
     },
-    {
-      name: 'TopperOn',
-      description: 'Simplify online learning with TopperOn, the social media platform designed for students and guardians. Stay connected with teachers, friends, and guardians—all in one app without the distractions. Discover nearby tutors, explore a diverse course library, and track performance with organized, student-friendly statistics. Plus, turn your news feed into an educational experience, making learning collaborative, engaging, and hassle-free.',
-      color: 'bg-blue-500',
-      image: '/images/products/topperon.svg',
-      tryNowLink: 'https://topperon.com'
-    }
+    // {
+    //   name: 'TopperOn',
+    //   description: 'Simplify online learning with TopperOn, the social media platform designed for students and guardians. Stay connected with teachers, friends, and guardians—all in one app without the distractions. Discover nearby tutors, explore a diverse course library, and track performance with organized, student-friendly statistics. Plus, turn your news feed into an educational experience, making learning collaborative, engaging, and hassle-free.',
+    //   color: 'bg-blue-500',
+    //   image: '/images/products/topperon.svg',
+    //   tryNowLink: 'https://topperon.com'
+    // }
   ] as const
 
 // If you haven't already defined it, add this to your types.ts file:
